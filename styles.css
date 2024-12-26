@@ -1,0 +1,652 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #222222;
+}
+
+header {
+    padding: 0 20px;
+    margin: 30px 0 49px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 94px;
+    height: 94px;
+    align-items: center;
+}
+
+header .ANDRES-PORTFOLIO {
+    color: white;
+    font-size: 10px;
+    display: none;
+}
+
+#close-nav-menu {
+    background-color: #222222;
+}
+
+#close-nav-menu {
+    color: white;
+}
+
+#open-nav-menu {
+    display: none; 
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    /*left: -100%;*/
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: #222222;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    align-items: flex-start;
+    padding: 90px 0;
+    z-index: 999;
+}
+
+.wrapper.nav-open {
+    right: 0;
+}
+  
+.wrapper ul {
+    list-style: none;
+    background-color: #222222;
+    width: 100%;
+}
+
+.wrapper ul li {
+    padding-top: 60px;
+    margin-right: 270px;
+}
+  
+.wrapper ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+}
+   
+.wrapper ul li.socials p {
+    color: var(--gray-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+header .navbar {
+    margin-left: 573px;
+}
+
+header .navbar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    padding-left: 48px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero .content-text {
+    margin-left: 135px;
+    width: 572px;
+    color: white;
+}
+
+.hero .content-text h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 16px 113px;
+}
+
+.hero .content-text h1 {
+    
+    margin: 0 0 0 111px;
+    font-size: 80px;
+}
+
+.hero .content-text p {
+    margin: 16px 0 16px 111px;
+    font-weight: 200;
+    color: gray;
+}
+
+.hero .content-text button {
+    margin: 16px 0 0 111px;
+    width: 285px;
+    height: 68px;
+    font-weight: 400;
+    background-color: #222222;
+    border: 1px solid white;
+    border-radius: 34px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero .content-text button:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero .photo-me img {
+    margin-left: 111px;
+    height: 653px;
+    border-radius: 0 0 50px 50px;
+}
+
+.projects {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.renders img {
+    width: 345px;
+    height: 203px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.renders img:hover {
+   transform: scale(1.2);
+}
+
+.BIM img {
+    width: 345px;
+    height: 203px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.BIM img:hover {
+    transform: scale(1.2);
+}
+
+.representation img {
+    width: 345px;
+    height: 203px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.representation img:hover {
+    transform: scale(1.2);
+}
+
+.about-me {
+    margin: 84px 115px 0 84px;
+    width: 1212px;
+    height: 601px;
+    display: flex;
+    justify-items: center;
+}
+
+.about-me .text-about-me {
+    width: 582px;
+    margin-left: 70px;
+}
+
+.about-me .text-about-me h1 {
+    font-size: 80px;
+    line-height: 0px;
+    color: white;
+}
+
+.about-me .text-about-me p {
+    margin-top: 130px;
+    font-size: 20px;
+    color: gray;
+}
+
+.about-me .img-IA img {
+    width: 619px;
+    height: 551px;
+    margin-left: 70px;
+}
+
+@media screen and (max-width: 1440px) {
+    
+    header {
+        width: 1180px;
+        max-width: 90%;
+        padding: 0 20px;
+        margin: 30px 0 49px 0;
+    }
+    
+    header .logo img {
+        width: 94px;
+        height: 94px;
+        align-items: center;
+    }
+    
+    header .navbar {
+        margin-left: 573px;
+    }
+    
+    header .navbar ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+    }
+    
+    .navbar ul li a {
+        padding-left: 48px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .navbar ul li a:hover {
+        color: aqua;
+    }
+    
+    .show-menu,
+    .hide-menu {
+        font-size: 30px;
+        color: white;
+        display: none;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    
+    .show-menu {
+        order: 1;
+    }
+    
+    .show-menu:hover,
+    .hide-menu:hover {
+        color: aqua;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    .hero {
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero .content-text {
+        margin-left: 135px;
+        width: 572px;
+        color: white;
+    }
+    
+    .hero .content-text h4 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 16px 113px;
+    }
+    
+    .hero .content-text h1 {
+        
+        margin: 0 0 0 111px;
+        font-size: 80px;
+    }
+    
+    .hero .content-text p {
+        margin: 16px 0 16px 111px;
+        font-weight: 200;
+        color: gray;
+    }
+    
+    .hero .content-text button {
+        margin: 16px 0 0 111px;
+        width: 285px;
+        height: 68px;
+        font-weight: 400;
+        background-color: #222222;
+        border: 1px solid white;
+        border-radius: 34px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .hero .content-text button:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .hero .photo-me img {
+        margin-left: 111px;
+        height: 653px;
+        border-radius: 0 0 50px 50px;
+    }
+    
+    .projects {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: gray;
+    }
+    
+    .renders img {
+        width: 345px;
+        height: 203px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .renders img:hover {
+       transform: scale(1.2);
+    }
+    
+    .BIM img {
+        width: 345px;
+        height: 203px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .BIM img:hover {
+        transform: scale(1.2);
+    }
+    
+    .representation img {
+        width: 345px;
+        height: 203px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .representation img:hover {
+        transform: scale(1.2);
+    }
+    
+    .about-me {
+        margin: 84px 115px 0 84px;
+        width: 1212px;
+        height: 601px;
+        display: flex;
+        justify-items: center;
+    }
+    
+    .about-me .text-about-me {
+        width: 582px;
+        margin-left: 70px;
+    }
+    
+    .about-me .text-about-me h1 {
+        font-size: 80px;
+        line-height: 0px;
+        color: white;
+    }
+    
+    .about-me .text-about-me p {
+        margin-top: 130px;
+        font-size: 20px;
+        color: gray;
+    }
+    
+    .about-me .img-IA img {
+        width: 619px;
+        height: 551px;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    
+    header .logo img {
+        width: 64px;
+        height: 64px;
+    }
+    
+    header .navbar {
+        margin-left: 320px;
+    }
+    
+    .navbar ul li a {
+        padding-left: 48px;
+        font-size: 18px;
+    }
+    
+    .hero .content-text {
+        margin-left: 85px;
+        width: 344px;
+    }
+    
+    .hero .content-text h4 {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 0 16px 0px;
+    }
+    
+    .hero .content-text h1 {
+        
+        margin: 0 0 0 0px;
+        font-size: 70px;
+    }
+    
+    .hero .content-text p {
+        margin: 16px 0 16px 0px;
+        font-weight: 100;
+    }
+    
+    .hero .content-text button {
+        margin: 16px 0 0 0px;
+        width: 184px;
+        height: 52px;
+    }
+    
+    .hero .photo-me img {
+        margin-left: 45px;
+        height: 509px;
+    }
+    
+    .renders img {
+        width: 309px;
+        height: 189px;
+    }
+    
+    .BIM img {
+        width: 309px;
+        height: 189px;
+    }
+    
+    .representation img {
+        width: 309px;
+        height: 189px;
+    }
+    
+    .about-me {
+        margin: 135px 180px 0 180px;
+        width: 1212px;
+        height: 601px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-me .text-about-me {
+        width: 582px;
+        margin-left: 0px;
+    }
+    
+    .about-me .text-about-me p {
+        margin-top: 110px;
+        font-size: 20px;
+    }
+
+    .about-me .img-IA img {
+        width: 619px;
+        height: 551px;
+        margin-left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+    header .logo img {
+        width: 46px;
+        height: 46px;
+    }
+    
+    header .ANDRES-PORTFOLIO {
+        color: white;
+        font-size: 10px;
+        display: block;
+    }
+
+    #open-nav-menu {
+        display: block;
+        background-color: #222222;
+        border: none;
+        cursor: pointer;
+    }
+
+    .wrapper {
+        position: fixed;
+        top: 0;
+        /*left: -100%;*/
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: var(--background-color);
+        transition: all 0.6s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 90px 0;
+        text-align: center;
+        z-index: 999;
+    }
+      
+    .wrapper ul {
+        list-style: none;
+    }
+    
+    .wrapper ul li {
+        padding-top: 60px;
+    }
+      
+    .wrapper ul li a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 22px;
+    }
+       
+    .wrapper ul li.socials p {
+        color: var(--gray-color);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero .content-text {
+        margin-left: 40px;
+        margin-top: 70px;
+        width: 361px;
+        order: 1;
+    }
+    
+    .hero .content-text h4 {
+        font-size: 14px;
+        margin: 0 0 16px 0px;
+    }
+    
+    .hero .content-text h1 {
+        margin: 0 0 0 0px;
+        font-size: 50px;
+    }
+    
+    .hero .content-text p {
+        margin: 16px 0 16px 0px;
+    }
+    
+    .hero .content-text button {
+        margin: 16px 0 0 0px;
+        width: 188px;
+        height: 51px;
+        order: 0;
+    }
+    
+    .hero .photo-me img {
+        margin-left: 0px;
+        height: 310px;
+        border-radius: 0 0 50px 50px;
+        order: 0;
+    }
+    
+    .projects {
+        margin-top: 50px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #222222;
+    }
+    
+    .BIM img {
+        width: 309px;
+        height: 203px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .about-me {
+        margin: 18px 0px 0 0px;
+        width: 255px;
+        height: 601px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-me .text-about-me {
+        width: 255px;
+        margin-left: 0px;
+    }
+    
+    .about-me .text-about-me h1 {
+        font-size: 48px;
+    }
+    
+    .about-me .text-about-me p {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    
+    .about-me .img-IA img {
+       display: none;
+    }   
+}
